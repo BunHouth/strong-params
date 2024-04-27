@@ -13,7 +13,7 @@ The implementation of strong parameters was previously forked from [koa-strong-p
 Install the [npm](https://www.npmjs.org/package/strong-params) package.
 
 ```
-npm install strong-params --save
+npm install strong-parameter --save
 ```
 
 #### Attach the middleware.
@@ -22,7 +22,7 @@ npm install strong-params --save
 
 ```js
 var express = require('express')
-var params = require('strong-params')
+var params = require('strong-parameter')
 app.use(params.expressMiddleware())
 ```
 
@@ -30,7 +30,7 @@ app.use(params.expressMiddleware())
 
 ```js
 var koa = require('koa')
-var params = require('strong-params')
+var params = require('strong-parameter')
 var app = new koa()
 app.use(params.koaMiddleware())
 ```
@@ -58,7 +58,7 @@ app.use(function (ctx, next) {
 ##### Standalone
 
 ```js
-var Parameters = require('strong-params').Parameters
+var Parameters = require('strong-parameter').Parameters
 var params = Parameters({
   id: '13',
   name: 'Bob',

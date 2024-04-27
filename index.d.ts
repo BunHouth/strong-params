@@ -1,1 +1,1 @@
-declare module 'strong-params';
+declare module 'strong-parameter';
